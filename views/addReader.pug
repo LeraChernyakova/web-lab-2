@@ -1,0 +1,10 @@
+dialog#dialogAdd.dialog-add
+    form#addReaderForm.book-form
+        label.dialog-label Данные читателя:
+            input.dialog-input(type="text" id="reader" name="reader" pattern="[a-zA-Zа-яА-Я ]*" placeholder="Фамилия Имя" required)
+        label.dialog-label Крайний срок возврата книги:
+            input.dialog-input(type="text" id="returnDate" pattern="[0-9.]*" name="returnDate" placeholder="ДД.ММ.ГГГГ" required)
+        p.p-dialog
+            button#submit.dialog-button.add-book-form-btn(type="submit") Сохранить данные
+        p.p-dialog
+            button#closeDialogButton.dialog-button.comeback Вернуться к книге

@@ -1,0 +1,53 @@
+- var toDate = function(returnDate) {
+-    const string = returnDate.split('.');
+-    const date = new Date(+string[2], +string[1]-1, +string[0]);
+-    return date.getTime();
+-};
+
+table.table
+    thead.thead
+        tr
+            th.th.th-id
+                | ID
+            th.th
+                | Автор
+            th.th.th-title
+                | Название произведения
+            th.th
+                | Год выпуска
+            th.th
+                | Подробнее
+            th.th
+                | Наличие
+            th.th
+                | Дата возврата
+            th.th
+                | Удаление
+    tbody.tbody
+        each book in books
+            tr.table_row
+                td.cell.td-id#id #{book.id}
+                td.cell.td_author #{book.author}
+                td.cell #{book.title}
+                td.cell #{book.releaseDate}
+                td.cell-icon
+                    a(href = "/book/" + book.id, style = "color: rgb(118, 54, 1)")
+                        i.fa.fa-book.fa-2x(aria-hidden='true')
+                if book.have === "yes"
+                    td.cell.yes Есть
+                else
+                    td.cell.no Отсутсвует
+                if book.returnDate === "null"
+                    td.cell ---
+                else if toDate(book.returnDate) < Date.now()
+                    td.cell.no #{book.returnDate}
+                else
+                    td.cell #{book.returnDate}
+                if book.have === "no"
+                    td.cell-icon
+                        button.delete(style="color: rgb(118, 54, 1)" disabled)
+                            i.fa.fa-trash.fa-2x(aria-hidden='true')
+                else
+                    td.cell-icon
+                        button.delete(style="color: rgb(118, 54, 1)")
+                            i.fa.fa-trash.fa-2x(aria-hidden='true')

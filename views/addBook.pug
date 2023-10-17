@@ -1,0 +1,16 @@
+div.add-book
+    p.add-p Добавить книгу
+    button#addBookButton.add-button
+        i.plus.fa.fa-plus-square-o.fa-2x(aria-hidden='true')
+dialog#dialog.dialog-add
+    form#addBookForm.book-form
+        label Название книги:
+            input(type="text" id="title" name="title" placeholder="Название" required)
+        label Автор:
+            input(type="text" id="author" pattern="[a-zA-Zа-яА-Я.- ]*" name="author" placeholder="И.О. Фамилия" required)
+        label Год публикации:
+            input(type="text" id="releaseDate" pattern="[0-9]{4}" name="releaseDate" placeholder="ГГГГ" required)
+        p
+            button#submit.dialog-button.add-book-form-btn(type="submit") Добавить книгу
+        p
+            button#closeDialogButton.dialog-button.comeback Вернуться в бибилиотеку

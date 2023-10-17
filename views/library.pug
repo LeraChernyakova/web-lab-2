@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/public/styles/library.css")
+        link(rel="stylesheet", href="/public/styles/bookTable.css")
+        link(rel="stylesheet", href="/public/styles/addBook.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        title Библиотека
+    body
+        h1.header Домашняя библиотека
+        select(id="filter_type", onchange="filter(this.options[this.selectedIndex].value);")
+            option(value='all') Вывести все
+            option(value='have') Только в наличии
+            option(value='returnDate') Время возврата
+        include bookTable.pug
+        include addBook.pug
+        script(src="/public/script/library.js")

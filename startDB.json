@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "Мастер и Маргарита",
+    "author": "Михаил Булгаков",
+    "releaseDate": "1967",
+    "have": "yes",
+    "reader": "null",
+    "returnDate": "null"
+  },
+  {
+    "id": "2",
+    "title": "Война и мир",
+    "author": "Лев Толстой",
+    "releaseDate": "1869",
+    "have": "no",
+    "reader": "Валерия",
+    "returnDate": "25.08.2004"
+  },
+  {
+    "id": "3",
+    "title": "Преступление и наказание",
+    "author": "Фёдор Достоевский",
+    "releaseDate": "1866",
+    "have": "no",
+    "reader": "Даниил",
+    "returnDate": "12.12.2023"
+  },
+  {
+    "id": "4",
+    "title": "Анна Каренина",
+    "author": "Лев Толстой",
+    "releaseDate": "1877",
+    "have": "no",
+    "reader": "Александр",
+    "returnDate": "10.10.2023"
+  },
+  {
+    "id": "5",
+    "title": "Маленький принц",
+    "author": "Антуан де Сент-Экзюпери",
+    "releaseDate": "1943",
+    "have": "yes",
+    "reader": "null",
+    "returnDate": "null"
+  },
+  {
+    "id": "6",
+    "title": "Золотой телёнок",
+    "author": "Ильф и Петров",
+    "releaseDate": "1931",
+    "have": "yes",
+    "reader": "null",
+    "returnDate": "null"
+  },
+  {
+    "id": "7",
+    "title": "Властелин колец",
+    "author": "Дж. Р. Р. Толкин",
+    "releaseDate": "1954",
+    "have": "no",
+    "reader": "Дарья",
+    "returnDate": "25.08.2025"
+  },
+  {
+    "id": "8",
+    "title": "Бесы",
+    "author": "Фёдор Достоевский",
+    "releaseDate": "1872",
+    "have": "yes",
+    "reader": "null",
+    "returnDate": "null"
+  },
+  {
+    "id": "9",
+    "title": "Доктор Живаго",
+    "author": "Борис Пастернак",
+    "releaseDate": "1957",
+    "have": "yes",
+    "reader": "null",
+    "returnDate": "null"
+  },
+  {
+    "id": "10",
+    "title": "О дивный новый мир",
+    "author": "Олдос Хаксли",
+    "releaseDate": "1932",
+    "have": "no",
+    "reader": "Татьяна",
+    "returnDate": "02.02.2020"
+  }
+]

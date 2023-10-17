@@ -1,0 +1,21 @@
+div.current-book
+    form#bookForm
+        label.book-label Название книги
+            input.book-input(name="title" type="text" value=`${book.title}` required)
+        label.book-label Автор книги
+            input.book-input(name="author" type="text" value=`${book.author}` required)
+        label.book-label Год издания
+            input.book-input(name="releaseDate" type="text" value=`${book.releaseDate}` required)
+        label.book-label Наличие
+            input.book-input(name="have" type="text" value=`${book.have === "yes" ? 'Есть' : 'Отсутсвует'}` readonly)
+        label.book-label Читатель
+            input.book-input(name="reader" type="text" value=`${book.reader === "null" ? '' : book.reader}` readonly)
+        label.book-label Дата возврата
+            input.book-input(name="returnDate" type="text" value=`${book.returnDate === "null" ? '' : book.returnDate}` readonly)
+        p.p-book
+            button.book-button.get-return#getBook(style={'display': book.have === "yes" ? "block" : "none"}) Взять книгу
+            button.book-button.get-return#returnBook(style={'display': book.have === "no" ? "block" : "none"}) Вернуть книгу
+        p.p-book
+            button.book-button.save(type="submit") Сохранить изменения
+        p.p-book
+            button.book-button.cancel#cancel Отменить изменения

@@ -1,0 +1,54 @@
+.table{
+    min-width: 728px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th {
+    padding: 12px 20px;
+    text-align: left;
+    color: rgb(118, 54, 1);
+    font-size: 15px;
+    scroll-snap-align: start;
+}
+
+.th-id {
+    min-width: 30px;
+}
+
+.th-title {
+    min-width: 300px;
+}
+
+.table_row {
+    height: 60px;
+    border-bottom: 1px solid rgb(118, 54, 1);
+}
+
+.cell {
+    padding: 0 20px;
+}
+
+.cell-icon {
+    padding: 0 45px;
+}
+
+.td-id{
+    color: grey;
+}
+
+.yes {
+    color: darkolivegreen;
+}
+
+.delete {
+    background: transparent;
+    border: none;
+    color: rgb(118, 54, 1);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.no {
+    color: red;
+}

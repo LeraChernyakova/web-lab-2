@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', system-ui;
+    font-size: 15px;
+}
+
+body {
+    background: url("/public/img/library.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-book {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255, 240, 220);
+    border: 2px solid rgb(118, 54, 1);
+    width: 20%;
+    height: 80%;
+}
+
+.book-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(118, 54, 1);
+}
+
+.book-input {
+    width: 230px;
+    padding: 5px 10px;
+    margin-top: 7px;
+    outline: none;
+    border: 2px solid rgb(118, 54, 1);
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(118, 54, 1);
+    background-color: white;
+}
+
+.p-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-button {
+    width: 230px;
+    font-size: 16px;
+    padding: 6px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.get-return {
+    margin-top: 10px;
+    background-color: rgb(118, 54, 1);
+    color: rgb(255, 240, 220);
+}
+
+.save {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 0;
+    width: auto;
+    background-color: transparent;
+    color: rgb(118, 54, 1);
+    text-decoration: underline;
+}
+
+.cancel {
+    margin-top: 5px;
+    padding: 0;
+    width: auto;
+    background-color: transparent;
+    color: rgb(118, 54, 1);
+    text-decoration: underline;
+}
+
+.back-link {
+    padding-top: 1.25%;
+}
+
+a {
+    font-size: 18px;
+    padding: 6px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: rgb(255, 240, 220);
+    text-align: center;
+}
